@@ -3,6 +3,7 @@ pipeline {
 
     stages {
 
+<<<<<<< HEAD
         stage('Checkout') {
             steps {
                 echo 'Getting project files'
@@ -30,6 +31,29 @@ pipeline {
         stage('Success') {
             steps {
                 echo 'Docker deployment completed!'
+=======
+        stage('Welcome') {
+            steps {
+                echo 'Welcome to Jenkins!'
+            }
+        }
+
+        stage('Install') {
+            steps {
+                echo 'Installing application'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building application'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Application testing'
+>>>>>>> 74e42a8fad3a19401def3c884588ccfa8fa52644
             }
         }
     }
